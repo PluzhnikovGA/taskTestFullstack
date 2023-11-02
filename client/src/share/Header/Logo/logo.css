@@ -1,0 +1,19 @@
+.logo {
+  position: relative;
+  display: inline-block;
+  padding: 24px 15px 35px 25px;
+  border: 1px solid rgba(94, 87, 83, .5);
+}
+
+@media (max-width: 1000px) {
+  .logo {
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .logo {
+    height: 100%;
+    margin-bottom: 0;
+  }
+}

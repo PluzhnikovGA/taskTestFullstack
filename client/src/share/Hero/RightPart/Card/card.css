@@ -1,0 +1,159 @@
+.card {
+  height: 160px;
+  text-align: center;
+  padding-top: 14px;
+  cursor: pointer;
+}
+
+.card:nth-child(4n+1) {
+  border-right: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  padding-right: 10px;
+  background-image: linear-gradient(to top left, rgba(0, 0, 0, .3), rgba(0, 0, 0, 0) 50%);
+}
+
+.card:nth-child(4n+1):hover {
+  background-image: linear-gradient(to top left, rgba(85, 89, 96, .3), rgba(85, 89, 96, 0) 50%);
+  border-image: linear-gradient(to left top, rgba(85, 89, 96, 1), rgba(85, 89, 96, 0) 50%);
+  border-image-slice: 1;
+}
+
+.card:nth-child(4n+2) {
+  text-align: end;
+  border-left: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  background-image: linear-gradient(to top right, rgba(0, 0, 0, .3), rgba(0, 0, 0, 0) 50%);
+}
+
+.card:nth-child(4n+2):hover {
+  background-image: linear-gradient(to top right, rgba(85, 89, 96, .3), rgba(85, 89, 96, 0) 50%);
+  border-image: linear-gradient(to top right, rgba(85, 89, 96, 1), rgba(85, 89, 96, 0) 50%);
+  border-image-slice: 1;
+}
+
+.card:nth-child(4n+3) {
+  padding-top: 32px;
+  padding-right: 12px;
+  border-top: 1px solid transparent;
+  border-right: 1px solid transparent;
+  background-image: linear-gradient(to bottom left, rgba(0, 0, 0, .3), rgba(0, 0, 0, 0) 50%);
+}
+
+.card:nth-child(4n+3):hover {
+  background-image: linear-gradient(to bottom left, rgba(85, 89, 96, .3), rgba(85, 89, 96, 0) 50%);
+  border-image: linear-gradient(to bottom left, rgba(85, 89, 96, 1), rgba(85, 89, 96, 0) 50%);
+  border-image-slice: 1;
+}
+
+.card:nth-child(4n+4) {
+  text-align: end;
+  padding-top: 32px;
+  padding-right: 4px;
+  border-top: 1px solid transparent;
+  border-left: 1px solid transparent;
+  background-image: linear-gradient(to bottom right, rgba(0, 0, 0, .3), rgba(0, 0, 0, 0) 50%);
+}
+
+.card:nth-child(4n+4):hover {
+  background-image: linear-gradient(to bottom right, rgba(85, 89, 96, .3), rgba(85, 89, 96, 0) 50%);
+  border-image: linear-gradient(to bottom right, rgba(85, 89, 96, 1), rgba(85, 89, 96, 0) 50%);
+  border-image-slice: 1;
+}
+
+.card:nth-child(4) > .littleText:last-child {
+  padding-right: 29px;
+}
+
+.littleText {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 100;
+}
+
+.littleText:first-child {
+  margin-bottom: 23px;
+}
+
+.bigText {
+  font-size: 60px;
+  line-height: 45px;
+  font-weight: 700;
+}
+
+@media (max-width: 1000px) {
+  .card {
+    height: 107px;
+    padding-top: 22px;
+  }
+
+  .card:nth-child(4n+1) {
+    padding-right: 7px;
+  }
+
+  .card:nth-child(4n+3) {
+    padding-top: 22px;
+    padding-right: 8px;
+  }
+
+  .card:nth-child(4n+4) {
+    padding-top: 22px;
+    padding-right: 3px;
+  }
+
+  .card:nth-child(4) > .little-text:last-child {
+    padding-right: 20px;
+  }
+
+  .littleText {
+    font-size: 12px;
+    line-height: 11px;
+  }
+
+  .littleText:first-child {
+    margin-bottom: 11px;
+  }
+
+  .bigText {
+    font-size: 40px;
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .card {
+    height: 80px;
+    padding-top: 7px;
+  }
+
+  .card:nth-child(4n+1) {
+    padding-right: 5px;
+  }
+
+  .card:nth-child(4n+3) {
+    padding-top: 16px;
+    padding-right: 6px;
+  }
+
+  .card:nth-child(4n+4) {
+    padding-top: 16px;
+    padding-right: 2px;
+  }
+
+  .card:nth-child(4) > .little-text:last-child {
+    padding-right: 15px;
+  }
+
+  .littleText {
+    font-size: 9px;
+    line-height: 11px;
+  }
+
+  .littleText:first-child {
+    margin-bottom: 11px;
+  }
+
+  .bigText {
+    font-size: 30px;
+    line-height: 22px;
+  }
+}

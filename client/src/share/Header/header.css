@@ -1,0 +1,36 @@
+.header {
+  position: relative;
+  background-color: rgba(0, 0, 0, .3);
+  z-index: 1;
+}
+
+.header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: 1px solid rgba(94, 87, 83, .5);
+  z-index: -1;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 1000px) {
+  .container {
+    flex-direction: column;
+    padding-bottom: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    flex-direction: row;
+    padding-bottom: 0;
+  }
+}

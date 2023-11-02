@@ -1,0 +1,43 @@
+.wrapper {
+  display: flex;
+}
+
+.button {
+  position: relative;
+  max-height: 38px;
+  margin-right: 8px;
+  padding: 11px 24px;
+  border: 1px solid rgba(36, 88, 156, 0.1);
+  border-image: linear-gradient(to right top, rgba(36, 88, 156, 0.8), rgba(36, 88, 156, 0.1), rgba(36, 88, 156, 0.8));
+  border-image-slice: 1;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 100;
+  color: #fff;
+  background-color: rgba(0, 0, 0, .3);
+}
+
+.line {
+  padding-top: 30px;
+}
+
+@media (max-width: 1000px) {
+  .line {
+    transform: scale(1, -1) translate(0, 30px);
+  }
+
+  #leftWrapper {
+    display: none;
+  }
+
+  #containerWrapper {
+    display: flex;
+    width: 50.2%;
+  }
+}
+
+@media (max-width: 576px) {
+  .line {
+    display: none;
+  }
+}

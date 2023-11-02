@@ -1,0 +1,38 @@
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 35px;
+}
+
+.topLeft,
+.bottomLeft,
+.bottomRight,
+.topRight {
+  position: absolute;
+}
+
+.topLeft {
+  top: -1px;
+  left: -1px;
+}
+
+.bottomLeft {
+  bottom: -1px;
+  left: -1px;
+}
+
+.bottomRight {
+  right: -1px;
+  bottom: -1px;
+}
+
+.topRight {
+  top: -1px;
+  right: -1px;
+}
+
+@media (max-width: 1000px) {
+  .container {
+    padding: 0 15px;
+  }
+}

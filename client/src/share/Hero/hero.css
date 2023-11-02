@@ -1,0 +1,20 @@
+.hero {
+  padding: 62px 0 165px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 1000px) {
+  .hero {
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 1000px) {
+  .container {
+    flex-direction: column;
+  }
+}
